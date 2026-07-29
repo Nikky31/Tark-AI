@@ -1,0 +1,493 @@
+======================================================================
+TARK AI - ACCURACY EVALUATION REPORT
+Generated: 2026-07-29T05:33:00
+======================================================================
+Test cases: 150
+Intent Detection Accuracy: 84.0%
+SQL Correctness: 90.0%
+Overall System Accuracy: 87.0%
+
+----------------------------------------------------------------------
+PER-DIFFICULTY BREAKDOWN
+----------------------------------------------------------------------
+  EASY    :  45 cases | Intent: 91.1% | SQL: 100.0%
+  MEDIUM  :  54 cases | Intent: 90.7% | SQL: 100.0%
+  HARD    :  32 cases | Intent: 68.8% | SQL: 59.4%
+  EDGE    :  19 cases | Intent: 73.7% | SQL: 89.5%
+
+----------------------------------------------------------------------
+INTENT CONFUSION MATRIX
+----------------------------------------------------------------------
+Expected          Aggregation   Comparison    Forecasting   KPI           Ranking       Trend         Visualization 
+Aggregation       46            1             0             0             3             0             0             
+Comparison        1             9             1             0             0             1             0             
+Forecasting       0             0             12            0             0             0             0             
+KPI               4             0             0             16            0             0             0             
+Ranking           7             0             0             2             27            0             0             
+Trend             0             0             0             1             0             5             0             
+Visualization     1             0             0             0             2             0             11            
+
+----------------------------------------------------------------------
+PER-INTENT ACCURACY
+----------------------------------------------------------------------
+  Aggregation       : 46/50 = 92.0%
+  Comparison        : 9/12 = 75.0%
+  Forecasting       : 12/12 = 100.0%
+  KPI               : 16/20 = 80.0%
+  Ranking           : 27/36 = 75.0%
+  Trend             : 5/6 = 83.3%
+  Visualization     : 11/14 = 78.6%
+
+----------------------------------------------------------------------
+DETAILED RESULTS
+----------------------------------------------------------------------
+[easy  ] Q: What is the total revenue
+         intent expected=KPI predicted=KPI conf=78.9% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Total profit
+         intent expected=KPI predicted=KPI conf=84.5% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Total quantity
+         intent expected=KPI predicted=KPI conf=84.7% [OK]
+         sql [OK]: SELECT SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.product ON fact_sales.product_
+[easy  ] Q: Show top 5 customers by revenue
+         intent expected=Ranking predicted=Ranking conf=93.5% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Show bottom 3 customers by profit
+         intent expected=Ranking predicted=Ranking conf=88.8% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Top 10 products by sales
+         intent expected=Ranking predicted=Ranking conf=86.4% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Revenue trend by order_id
+         intent expected=Trend predicted=Trend conf=88.6% [OK]
+         sql [OK]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[easy  ] Q: Compare sales between customers
+         intent expected=Comparison predicted=Comparison conf=91.7% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Forecast next month sales
+         intent expected=Forecasting predicted=Forecasting conf=99.0% [OK]
+         sql [OK]: (skipped - forecasting)
+[easy  ] Q: Revenue by region
+         intent expected=Aggregation predicted=Aggregation conf=45.1% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[easy  ] Q: Show me a chart of sales
+         intent expected=Visualization predicted=Visualization conf=84.6% [OK]
+         sql [OK]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[easy  ] Q: Sales per customer
+         intent expected=Aggregation predicted=Aggregation conf=90.1% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Average order value
+         intent expected=KPI predicted=KPI conf=64.5% [OK]
+         sql [OK]: SELECT AVG(quantity) AS quantity FROM tark_ai.fact_sales
+[easy  ] Q: Predict Q4 revenue
+         intent expected=Forecasting predicted=Forecasting conf=81.3% [OK]
+         sql [OK]: (skipped - forecasting)
+[easy  ] Q: Plot revenue by region
+         intent expected=Visualization predicted=Visualization conf=79.5% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[easy  ] Q: What is the total sales
+         intent expected=KPI predicted=KPI conf=68.3% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Total revenue generated
+         intent expected=KPI predicted=KPI conf=78.9% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Sum of all profit
+         intent expected=KPI predicted=KPI conf=56.9% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Total quantity sold
+         intent expected=KPI predicted=KPI conf=77.1% [OK]
+         sql [OK]: SELECT SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.product ON fact_sales.product_
+[easy  ] Q: Show top 5 products by revenue
+         intent expected=Ranking predicted=Ranking conf=88.0% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Top 3 customers by profit
+         intent expected=Ranking predicted=Ranking conf=83.8% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Bottom 5 products by revenue
+         intent expected=Ranking predicted=Ranking conf=56.5% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Revenue by city
+         intent expected=Aggregation predicted=Aggregation conf=64.1% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[easy  ] Q: Profit by category
+         intent expected=Aggregation predicted=Aggregation conf=59.2% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[easy  ] Q: Sales by product
+         intent expected=Aggregation predicted=Aggregation conf=53.8% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Quantity by region
+         intent expected=Aggregation predicted=Aggregation conf=32.1% [OK]
+         sql [OK]: SELECT store.region, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.store ON fact_sa
+[easy  ] Q: Sales per product
+         intent expected=Aggregation predicted=Aggregation conf=83.5% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Show me a chart of revenue
+         intent expected=Visualization predicted=Visualization conf=83.8% [OK]
+         sql [OK]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[easy  ] Q: Plot sales by city
+         intent expected=Visualization predicted=Visualization conf=25.5% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[easy  ] Q: Compare profit between regions
+         intent expected=Comparison predicted=Comparison conf=65.8% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[easy  ] Q: Forecast next month revenue
+         intent expected=Forecasting predicted=Forecasting conf=98.2% [OK]
+         sql [OK]: (skipped - forecasting)
+[easy  ] Q: Predict next quarter sales
+         intent expected=Forecasting predicted=Forecasting conf=97.0% [OK]
+         sql [OK]: (skipped - forecasting)
+[easy  ] Q: Revenue by customer
+         intent expected=Aggregation predicted=Ranking conf=63.6% [X ]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: How much revenue did we generate in total
+         intent expected=KPI predicted=KPI conf=46.0% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[medium] Q: What is our total profit
+         intent expected=KPI predicted=KPI conf=84.5% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[medium] Q: Total sales amount overall
+         intent expected=KPI predicted=KPI conf=95.0% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[medium] Q: Total quantity sold
+         intent expected=KPI predicted=KPI conf=77.1% [OK]
+         sql [OK]: SELECT SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.product ON fact_sales.product_
+[medium] Q: Average revenue per customer
+         intent expected=Aggregation predicted=Aggregation conf=83.9% [OK]
+         sql [OK]: SELECT customer.customer_name, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Average profit by region
+         intent expected=Aggregation predicted=Aggregation conf=33.9% [OK]
+         sql [OK]: SELECT store.region, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Average sales per product
+         intent expected=Aggregation predicted=Aggregation conf=82.8% [OK]
+         sql [OK]: SELECT product.product_name, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Total revenue by region
+         intent expected=Aggregation predicted=Aggregation conf=40.3% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Total profit by category
+         intent expected=Aggregation predicted=Aggregation conf=43.2% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Total sales by customer
+         intent expected=Aggregation predicted=Aggregation conf=50.1% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Revenue by city
+         intent expected=Aggregation predicted=Aggregation conf=64.1% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[medium] Q: Profit by product
+         intent expected=Aggregation predicted=Aggregation conf=64.0% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Quantity by category
+         intent expected=Aggregation predicted=Aggregation conf=39.5% [OK]
+         sql [OK]: SELECT product.category, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.product ON f
+[medium] Q: Revenue segmented by customer
+         intent expected=Aggregation predicted=Aggregation conf=74.1% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Sales grouped by region
+         intent expected=Aggregation predicted=Aggregation conf=68.0% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Revenue breakdown by category
+         intent expected=Aggregation predicted=Aggregation conf=61.7% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Profit distribution across regions
+         intent expected=Aggregation predicted=Aggregation conf=28.9% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Show top 5 customers by revenue
+         intent expected=Ranking predicted=Ranking conf=93.5% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Top 10 products by profit
+         intent expected=Ranking predicted=Ranking conf=80.4% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Bottom 5 regions by sales
+         intent expected=Ranking predicted=Ranking conf=45.4% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Bottom 3 customers by profit
+         intent expected=Ranking predicted=Ranking conf=74.2% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Top 5 products by quantity
+         intent expected=Ranking predicted=Ranking conf=74.2% [OK]
+         sql [OK]: SELECT product.product_name, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.product 
+[medium] Q: Which customer has the highest revenue
+         intent expected=Ranking predicted=Ranking conf=70.8% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Which product has the lowest profit
+         intent expected=Ranking predicted=Ranking conf=30.9% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Customers with revenue more than 5000
+         intent expected=Ranking predicted=Ranking conf=53.6% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Products with profit more than 1000
+         intent expected=Ranking predicted=Aggregation conf=30.9% [X ]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Regions with sales more than 20000
+         intent expected=Ranking predicted=Aggregation conf=32.0% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Compare revenue between regions
+         intent expected=Comparison predicted=Comparison conf=35.4% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Compare profit across categories
+         intent expected=Comparison predicted=Comparison conf=90.0% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Compare sales between customers
+         intent expected=Comparison predicted=Comparison conf=91.7% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Plot revenue by region
+         intent expected=Visualization predicted=Visualization conf=79.5% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Plot profit by category
+         intent expected=Visualization predicted=Aggregation conf=36.1% [X ]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Show me a chart of sales by city
+         intent expected=Visualization predicted=Visualization conf=64.8% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[medium] Q: Visualize quantity by product
+         intent expected=Visualization predicted=Visualization conf=24.3% [OK]
+         sql [OK]: SELECT product.stock_quantity, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.produc
+[medium] Q: What will our sales be next month
+         intent expected=Forecasting predicted=Forecasting conf=95.8% [OK]
+         sql [OK]: (skipped - forecasting)
+[medium] Q: Predict next quarter profit
+         intent expected=Forecasting predicted=Forecasting conf=95.3% [OK]
+         sql [OK]: (skipped - forecasting)
+[hard  ] Q: Top 5 regions by total revenue
+         intent expected=Ranking predicted=Ranking conf=32.8% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Bottom 5 products by total profit
+         intent expected=Ranking predicted=Aggregation conf=49.2% [X ]
+         sql [X ]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[hard  ] Q: Regions where total sales exceed 10000
+         intent expected=Ranking predicted=Aggregation conf=46.4% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Customers with total profit more than 5000
+         intent expected=Ranking predicted=KPI conf=59.3% [X ]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[hard  ] Q: Average profit by region
+         intent expected=Aggregation predicted=Aggregation conf=33.9% [OK]
+         sql [OK]: SELECT store.region, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Total revenue by category
+         intent expected=Aggregation predicted=Aggregation conf=48.8% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[hard  ] Q: Compare total revenue between regions
+         intent expected=Comparison predicted=Comparison conf=32.6% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Plot total profit by category
+         intent expected=Visualization predicted=Visualization conf=34.7% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[hard  ] Q: Total quantity by product
+         intent expected=Aggregation predicted=Aggregation conf=76.1% [OK]
+         sql [OK]: SELECT product.stock_quantity, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.produc
+[hard  ] Q: Which category has the highest revenue
+         intent expected=Ranking predicted=Ranking conf=49.7% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[hard  ] Q: Rank all regions by total profit
+         intent expected=Ranking predicted=Aggregation conf=40.6% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: How much revenue will we earn next year
+         intent expected=Forecasting predicted=Forecasting conf=79.7% [OK]
+         sql [OK]: (skipped - forecasting)
+[hard  ] Q: Forecast demand for next quarter
+         intent expected=Forecasting predicted=Forecasting conf=98.5% [OK]
+         sql [OK]: (skipped - forecasting)
+[hard  ] Q: Year over year growth rate of revenue
+         intent expected=Trend predicted=Trend conf=81.4% [OK]
+         sql [X ]: SELECT year(class_attendance.date) AS period, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sal
+[hard  ] Q: Percentage contribution of each region to total sales
+         intent expected=Aggregation predicted=Aggregation conf=65.8% [OK]
+         sql [X ]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Correlation between sales and profit
+         intent expected=Comparison predicted=Comparison conf=21.4% [OK]
+         sql [X ]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[hard  ] Q: Running total of revenue over months
+         intent expected=Trend predicted=KPI conf=58.5% [X ]
+         sql [X ]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[hard  ] Q: Rank products by profit margin percentage
+         intent expected=Ranking predicted=Ranking conf=56.3% [OK]
+         sql [X ]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[hard  ] Q: Compare this year revenue with last year
+         intent expected=Comparison predicted=Trend conf=50.1% [X ]
+         sql [X ]: SELECT year(class_attendance.date) AS period, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sal
+[hard  ] Q: Moving average of monthly sales
+         intent expected=Trend predicted=Trend conf=32.7% [OK]
+         sql [X ]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, AVG(sales_amount) AS salesamount FRO
+[edge  ] Q: xyz gibberish abc random
+         intent expected=Aggregation predicted=Aggregation conf=15.0% [OK]
+         sql [OK]: (None - expected)
+[edge  ] Q: hello
+         intent expected=Aggregation predicted=Aggregation conf=15.0% [OK]
+         sql [OK]: (None - expected)
+[edge  ] Q: revanue totl
+         intent expected=KPI predicted=Aggregation conf=15.0% [X ]
+         sql [X ]: 
+[edge  ] Q: Forecast future demand for next period
+         intent expected=Forecasting predicted=Forecasting conf=98.5% [OK]
+         sql [OK]: (skipped - forecasting)
+[edge  ] Q: Just show me everything
+         intent expected=Visualization predicted=Ranking conf=39.9% [X ]
+         sql [OK]: SELECT date_format(fact_sales.order_date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[edge  ] Q: asdf qwer zxcv
+         intent expected=Aggregation predicted=Aggregation conf=15.0% [OK]
+         sql [OK]: (None - expected)
+[edge  ] Q: hi there
+         intent expected=Aggregation predicted=Aggregation conf=15.0% [OK]
+         sql [OK]: (None - expected)
+[edge  ] Q: totl revenu
+         intent expected=KPI predicted=Aggregation conf=15.0% [X ]
+         sql [X ]: 
+[edge  ] Q: Forecast upcoming demand
+         intent expected=Forecasting predicted=Forecasting conf=92.0% [OK]
+         sql [OK]: (skipped - forecasting)
+[edge  ] Q: just show me all data
+         intent expected=Visualization predicted=Visualization conf=82.6% [OK]
+         sql [OK]: SELECT product.product_name, SUM(unit_price) AS unitprice FROM tark_ai.product GROUP BY product.prod
+[edge  ] Q: proft by regon
+         intent expected=Aggregation predicted=Aggregation conf=15.0% [OK]
+         sql [OK]: SELECT product.product_name, SUM(unit_price) AS unitprice FROM tark_ai.product GROUP BY product.prod
+[easy  ] Q: Total revenue
+         intent expected=KPI predicted=KPI conf=78.9% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Total profit
+         intent expected=KPI predicted=KPI conf=84.5% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[easy  ] Q: Sales by product
+         intent expected=Aggregation predicted=Aggregation conf=53.8% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Profit by region
+         intent expected=Aggregation predicted=Ranking conf=51.8% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[easy  ] Q: Revenue by customer
+         intent expected=Aggregation predicted=Ranking conf=63.6% [X ]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Quantity by city
+         intent expected=Aggregation predicted=Aggregation conf=37.0% [OK]
+         sql [OK]: SELECT customer.city, SUM(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.customer ON fac
+[easy  ] Q: Top 3 regions by revenue
+         intent expected=Ranking predicted=Ranking conf=50.8% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[easy  ] Q: Top 5 customers by profit
+         intent expected=Ranking predicted=Ranking conf=83.8% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[easy  ] Q: Bottom 3 products by sales
+         intent expected=Ranking predicted=Ranking conf=71.6% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[easy  ] Q: Revenue by category
+         intent expected=Aggregation predicted=Aggregation conf=37.8% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[easy  ] Q: Profit by city
+         intent expected=Aggregation predicted=Aggregation conf=40.7% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[easy  ] Q: Sales by region
+         intent expected=Aggregation predicted=Comparison conf=52.1% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Average revenue by region
+         intent expected=Aggregation predicted=Aggregation conf=57.0% [OK]
+         sql [OK]: SELECT store.region, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Average profit per product
+         intent expected=Aggregation predicted=Aggregation conf=69.6% [OK]
+         sql [OK]: SELECT product.product_name, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Average quantity per customer
+         intent expected=Aggregation predicted=Aggregation conf=77.4% [OK]
+         sql [OK]: SELECT product.stock_quantity, AVG(quantity) AS quantity FROM tark_ai.fact_sales JOIN tark_ai.produc
+[medium] Q: Total revenue by customer
+         intent expected=Aggregation predicted=Aggregation conf=51.5% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Total profit by product
+         intent expected=Aggregation predicted=Aggregation conf=46.6% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Total sales by category
+         intent expected=Aggregation predicted=Aggregation conf=68.4% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Top 10 customers by sales
+         intent expected=Ranking predicted=Ranking conf=84.9% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Bottom 5 products by profit
+         intent expected=Ranking predicted=Ranking conf=55.3% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Which region has the highest profit
+         intent expected=Ranking predicted=Ranking conf=62.7% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Which customer has the lowest sales
+         intent expected=Ranking predicted=Ranking conf=26.6% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Customers with profit more than 2000
+         intent expected=Ranking predicted=Ranking conf=59.1% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: Products with revenue more than 8000
+         intent expected=Ranking predicted=Aggregation conf=31.2% [X ]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Compare profit between regions
+         intent expected=Comparison predicted=Comparison conf=65.8% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[medium] Q: Compare revenue across products
+         intent expected=Comparison predicted=Comparison conf=74.8% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[medium] Q: Plot sales by category
+         intent expected=Visualization predicted=Visualization conf=33.7% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[medium] Q: Visualize revenue by customer
+         intent expected=Visualization predicted=Ranking conf=45.4% [X ]
+         sql [OK]: SELECT customer.customer_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai
+[medium] Q: What will revenue be next year
+         intent expected=Forecasting predicted=Forecasting conf=92.4% [OK]
+         sql [OK]: (skipped - forecasting)
+[medium] Q: Predict sales for next month
+         intent expected=Forecasting predicted=Forecasting conf=97.8% [OK]
+         sql [OK]: (skipped - forecasting)
+[hard  ] Q: Top 5 categories by total revenue
+         intent expected=Ranking predicted=Ranking conf=31.5% [OK]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[hard  ] Q: Regions where total profit exceeds 5000
+         intent expected=Ranking predicted=KPI conf=56.7% [X ]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Average revenue by product
+         intent expected=Aggregation predicted=Aggregation conf=34.4% [OK]
+         sql [OK]: SELECT product.product_name, AVG(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[hard  ] Q: Total profit by region
+         intent expected=Aggregation predicted=Aggregation conf=40.0% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Compare total sales between categories
+         intent expected=Comparison predicted=Aggregation conf=48.7% [X ]
+         sql [OK]: SELECT product.category, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.produ
+[hard  ] Q: Plot total revenue by region
+         intent expected=Visualization predicted=Visualization conf=36.1% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[hard  ] Q: Rank all products by total revenue
+         intent expected=Ranking predicted=Aggregation conf=48.2% [X ]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[hard  ] Q: Cumulative revenue by month
+         intent expected=Trend predicted=Trend conf=45.8% [OK]
+         sql [X ]: SELECT date_format(class_attendance.date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[hard  ] Q: Profit margin percentage by product
+         intent expected=Aggregation predicted=Aggregation conf=30.9% [OK]
+         sql [X ]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[hard  ] Q: Revenue growth rate over quarters
+         intent expected=Trend predicted=Trend conf=80.1% [OK]
+         sql [X ]: SELECT concat(cast(year(class_attendance.date) as string), '-Q', cast(quarter(class_attendance.date)
+[hard  ] Q: Compare current month sales to previous month
+         intent expected=Comparison predicted=Forecasting conf=67.1% [X ]
+         sql [X ]: SELECT date_format(class_attendance.date, 'yyyy-MM') AS period, SUM(sales_amount) AS salesamount FRO
+[hard  ] Q: Standard deviation of sales per region
+         intent expected=Aggregation predicted=Aggregation conf=84.6% [OK]
+         sql [X ]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[edge  ] Q: Total profit amount
+         intent expected=KPI predicted=KPI conf=88.4% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[edge  ] Q: revenue by city please
+         intent expected=Aggregation predicted=Aggregation conf=47.6% [OK]
+         sql [OK]: SELECT customer.city, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.customer
+[edge  ] Q: top 5 customers by revenue!!!
+         intent expected=Ranking predicted=Ranking conf=84.2% [OK]
+         sql [OK]: SELECT customer.customer_name, SUM(unit_price) AS unitprice FROM tark_ai.product GROUP BY customer.c
+[edge  ] Q: how much profit
+         intent expected=KPI predicted=KPI conf=43.6% [OK]
+         sql [OK]: SELECT SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales
+[edge  ] Q: sales figures by region
+         intent expected=Aggregation predicted=Aggregation conf=22.8% [OK]
+         sql [OK]: SELECT store.region, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.store ON 
+[edge  ] Q: profit per product
+         intent expected=Aggregation predicted=Aggregation conf=70.9% [OK]
+         sql [OK]: SELECT product.product_name, SUM(sales_amount) AS salesamount FROM tark_ai.fact_sales JOIN tark_ai.p
+[edge  ] Q: asdfgh qwerty zxcvb
+         intent expected=KPI predicted=Aggregation conf=15.0% [X ]
+         sql [OK]: (None - expected)
+[edge  ] Q: the of and to a
+         intent expected=KPI predicted=Aggregation conf=15.0% [X ]
+         sql [OK]: (None - expected)

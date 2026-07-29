@@ -1,0 +1,17 @@
+pyspark==3.5.1
+pandas
+pymysql
+sqlalchemy
+nltk
+requests
+streamlit
+plotly
+reportlab
+kaleido
+python-dotenv
+
+# Optional: only needed if EXECUTION_ENGINE = "hive" in config/config.py
+# (the default "spark" engine does not need these). Uncomment to use PyHive.
+# pyhive
+# thrift
+# thrift-sasl

@@ -1,0 +1,1252 @@
+[
+  {
+    "query": "What is the total revenue",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Total profit",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Total quantity",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Show top 5 customers by revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT 5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Show bottom 3 customers by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ASC",
+      "LIMIT 3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Top 10 products by sales",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 10"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Revenue trend by order_id",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Compare sales between customers",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Forecast next month sales",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "easy",
+    "skip_sql": true
+  },
+  {
+    "query": "Revenue by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Show me a chart of sales",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sales per customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Average order value",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Predict Q4 revenue",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "easy",
+    "skip_sql": true
+  },
+  {
+    "query": "Plot revenue by region",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "What is the total sales",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Total revenue generated",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sum of all profit",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Total quantity sold",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Show top 5 products by revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "GROUP BY",
+      "ORDER BY",
+      "LIMIT 5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Top 3 customers by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Bottom 5 products by revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ASC",
+      "LIMIT 5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Revenue by city",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Profit by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sales by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Quantity by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sales per product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Show me a chart of revenue",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Plot sales by city",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Compare profit between regions",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Forecast next month revenue",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "easy",
+    "skip_sql": true
+  },
+  {
+    "query": "Predict next quarter sales",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "easy",
+    "skip_sql": true
+  },
+  {
+    "query": "Revenue by customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "How much revenue did we generate in total",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "What is our total profit",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total sales amount overall",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total quantity sold",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Average revenue per customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Average profit by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Average sales per product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total revenue by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total profit by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total sales by customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Revenue by city",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Profit by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Quantity by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Revenue segmented by customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Sales grouped by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Revenue breakdown by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Profit distribution across regions",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Show top 5 customers by revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Top 10 products by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Bottom 5 regions by sales",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC",
+      "LIMIT 5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Bottom 3 customers by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC",
+      "LIMIT 3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Top 5 products by quantity",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Which customer has the highest revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Which product has the lowest profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Customers with revenue more than 5000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Products with profit more than 1000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Regions with sales more than 20000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Compare revenue between regions",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Compare profit across categories",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Compare sales between customers",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Plot revenue by region",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Plot profit by category",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Show me a chart of sales by city",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Visualize quantity by product",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "What will our sales be next month",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "medium",
+    "skip_sql": true
+  },
+  {
+    "query": "Predict next quarter profit",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "medium",
+    "skip_sql": true
+  },
+  {
+    "query": "Top 5 regions by total revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Bottom 5 products by total profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC",
+      "LIMIT 5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Regions where total sales exceed 10000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Customers with total profit more than 5000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Average profit by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Total revenue by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Compare total revenue between regions",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Plot total profit by category",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Total quantity by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Which category has the highest revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Rank all regions by total profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "How much revenue will we earn next year",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "skip_sql": true
+  },
+  {
+    "query": "Forecast demand for next quarter",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "skip_sql": true
+  },
+  {
+    "query": "Year over year growth rate of revenue",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Percentage contribution of each region to total sales",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Correlation between sales and profit",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Running total of revenue over months",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Rank products by profit margin percentage",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Compare this year revenue with last year",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Moving average of monthly sales",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "xyz gibberish abc random",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  },
+  {
+    "query": "hello",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  },
+  {
+    "query": "revanue totl",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "Forecast future demand for next period",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "skip_sql": true
+  },
+  {
+    "query": "Just show me everything",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [],
+    "difficulty": "edge"
+  },
+  {
+    "query": "asdf qwer zxcv",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  },
+  {
+    "query": "hi there",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  },
+  {
+    "query": "totl revenu",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "Forecast upcoming demand",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "skip_sql": true
+  },
+  {
+    "query": "just show me all data",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [],
+    "difficulty": "edge"
+  },
+  {
+    "query": "proft by regon",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "edge"
+  },
+  {
+    "query": "Total revenue",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Total profit",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sales by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Profit by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Revenue by customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Quantity by city",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Top 3 regions by revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Top 5 customers by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Bottom 3 products by sales",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC",
+      "LIMIT 3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Revenue by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Profit by city",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Sales by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "query": "Average revenue by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Average profit per product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Average quantity per customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total revenue by customer",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total profit by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Total sales by category",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Top 10 customers by sales",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Bottom 5 products by profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC",
+      "LIMIT 5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Which region has the highest profit",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Which customer has the lowest sales",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "ASC"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Customers with profit more than 2000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Products with revenue more than 8000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Compare profit between regions",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Compare revenue across products",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Plot sales by category",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "Visualize revenue by customer",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "query": "What will revenue be next year",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "medium",
+    "skip_sql": true
+  },
+  {
+    "query": "Predict sales for next month",
+    "expected_intent": "Forecasting",
+    "expect_sql_contains": [],
+    "difficulty": "medium",
+    "skip_sql": true
+  },
+  {
+    "query": "Top 5 categories by total revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Regions where total profit exceeds 5000",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "HAVING",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Average revenue by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "AVG",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Total profit by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Compare total sales between categories",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Plot total revenue by region",
+    "expected_intent": "Visualization",
+    "expect_sql_contains": [
+      "SUM",
+      "GROUP BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Rank all products by total revenue",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "query": "Cumulative revenue by month",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Profit margin percentage by product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Revenue growth rate over quarters",
+    "expected_intent": "Trend",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Compare current month sales to previous month",
+    "expected_intent": "Comparison",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Standard deviation of sales per region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [],
+    "difficulty": "hard",
+    "expect_fail": true
+  },
+  {
+    "query": "Total profit amount",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "revenue by city please",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "top 5 customers by revenue!!!",
+    "expected_intent": "Ranking",
+    "expect_sql_contains": [
+      "ORDER BY",
+      "DESC",
+      "LIMIT 5"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "how much profit",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [
+      "SUM"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "sales figures by region",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "profit per product",
+    "expected_intent": "Aggregation",
+    "expect_sql_contains": [
+      "GROUP BY"
+    ],
+    "difficulty": "edge"
+  },
+  {
+    "query": "asdfgh qwerty zxcvb",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  },
+  {
+    "query": "the of and to a",
+    "expected_intent": "KPI",
+    "expect_sql_contains": [],
+    "difficulty": "edge",
+    "expect_fail": true
+  }
+]
