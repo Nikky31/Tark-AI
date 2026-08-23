@@ -151,8 +151,6 @@ def _predict(question):
     model = get_model()
     clean_question = clean_text(question)
     predicted_intent = model.predict([clean_question])[0]
-    # predict_proba gives a score for every intent (the fraction of trees
-    # that voted for it); the biggest one is how confident the model is.
     confidence = max(model.predict_proba([clean_question])[0])
     return predicted_intent, confidence
 
