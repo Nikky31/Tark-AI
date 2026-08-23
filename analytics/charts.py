@@ -190,6 +190,5 @@ def build_chart(intent, df):
     else:
         figure = make_vertical_bar(df, category_col, value_col)
 
-    # add currency symbol
     figure = apply_currency(figure, value_col, chart_type)
     return figure, chart_type
