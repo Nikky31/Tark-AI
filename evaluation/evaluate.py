@@ -1,21 +1,3 @@
-# evaluation/evaluate.py
-# ------------------------------------------------------------------
-# Layer 10: Evaluate intent detection + SQL generation accuracy.
-#
-# This script runs our NL->SQL system against a set of labelled test
-# queries (eval_dataset.json) and measures how well it does. For every
-# test query we check two separate things:
-#   1. Did we detect the correct INTENT?  (Ranking / KPI / Trend / ...)
-#   2. Did we generate acceptable SQL?     (checked with keyword hints)
-#
-# It then prints and saves a readable report that contains:
-#   - overall intent / SQL / combined accuracy
-#   - a per-difficulty breakdown (easy / medium / hard / edge)
-#   - an intent confusion matrix
-#   - per-intent accuracy
-#   - a detailed, line-by-line result for every query
-# ------------------------------------------------------------------
-
 import os
 import json
 from datetime import datetime
@@ -34,39 +16,22 @@ REPORT_FILE = os.path.join(HERE, "accuracy_report.txt")
 DIFFICULTY_ORDER = ["easy", "medium", "hard", "edge"]
 
 
-# =====================================================================
-# PART 1 : LOADING THE TEST DATA
-# =====================================================================
-
 def load_dataset():
-    """Read the list of labelled test cases from the JSON file."""
+ 
     with open(EVAL_FILE) as f:
         return json.load(f)
 
 
-# =====================================================================
-# PART 2 : CHECKING ONE TEST CASE
-# =====================================================================
 
 def check_intent(case):
-    """Predict the intent for one case -> (predicted_intent, confidence, is_correct)."""
+   
     predicted_intent, confidence = get_intent_confidence(case["query"])
     is_correct = predicted_intent == case["expected_intent"]
     return predicted_intent, confidence, is_correct
 
 
 def check_sql(case):
-    """Check whether the SQL we generate for one case is acceptable.
 
-    Three kinds of cases:
-    - skip_sql   : forecasting queries we never turn into SQL -> auto correct.
-    - expect_fail: gibberish / greetings where the RIGHT behaviour is NO SQL
-                   (generate_sql returns None).
-    - normal     : generate SQL and confirm it contains every expected keyword
-                   (case-insensitive); with no keywords, any non-empty SQL is ok.
-
-    Returns (sql_text_for_report, is_correct).
-    """
     # 1. Forecasting queries are handled elsewhere, so skip SQL here.
     if case.get("skip_sql"):
         return "(skipped - forecasting)", True
@@ -88,21 +53,12 @@ def check_sql(case):
 
 
 def percent(part, whole):
-    """Turn part/whole into a rounded percentage (0 when whole is 0)."""
+    
     return round(part / whole * 100, 2) if whole else 0.0
 
 
-# =====================================================================
-# PART 3 : RUNNING EVERY TEST CASE
-# =====================================================================
-
 def run_all_cases(dataset):
-    """Run every test case once and collect all the numbers we need.
 
-    Returns a dict with running totals (intent_correct / sql_correct), the
-    confusion[expected][predicted] counts, per-difficulty tallies (diff_scores),
-    and one detailed row per test case (details).
-    """
     intent_correct = 0
     sql_correct = 0
     details = []
@@ -139,12 +95,8 @@ def run_all_cases(dataset):
     }
 
 
-# =====================================================================
-# PART 4 : BUILDING THE REPORT (one helper per section)
-# =====================================================================
-
 def build_header(total, intent_acc, sql_acc, overall):
-    """The top summary block of the report."""
+    
     return [
         "=" * 70,
         "TARK AI - ACCURACY EVALUATION REPORT",
@@ -162,7 +114,7 @@ def build_header(total, intent_acc, sql_acc, overall):
 
 
 def build_difficulty_section(diff_scores):
-    """Show intent% and SQL% for each difficulty level that has cases."""
+    
     lines = []
     for difficulty in DIFFICULTY_ORDER:
         scores = diff_scores[difficulty]
@@ -175,14 +127,14 @@ def build_difficulty_section(diff_scores):
 
 
 def collect_all_intents(confusion):
-    """Every intent that appears as either an expected OR predicted label."""
+    
     expected_labels = list(confusion.keys())
     predicted_labels = [i for row in confusion.values() for i in row.keys()]
     return sorted(set(expected_labels + predicted_labels))
 
 
 def build_confusion_section(confusion, all_intents):
-    """A grid of expected (rows) vs predicted (columns) counts."""
+    
     lines = ["", "-" * 70, "INTENT CONFUSION MATRIX", "-" * 70]
     lines.append(f"{'Expected':<18}" + "".join(f"{i:<14}" for i in all_intents))
     for expected in all_intents:
@@ -192,7 +144,7 @@ def build_confusion_section(confusion, all_intents):
 
 
 def build_per_intent_section(confusion, all_intents):
-    """How accurate we were for each individual intent."""
+    
     lines = ["", "-" * 70, "PER-INTENT ACCURACY", "-" * 70]
     for intent in all_intents:
         total_for_intent = sum(confusion[intent].values())
@@ -204,7 +156,7 @@ def build_per_intent_section(confusion, all_intents):
 
 
 def build_details_section(details):
-    """One block per query showing the intent and SQL result."""
+    
     lines = ["", "-" * 70, "DETAILED RESULTS", "-" * 70]
     for query, expected, predicted, conf, intent_ok, sql_ok, sql, difficulty in details:
         intent_mark = "OK" if intent_ok else "X "
@@ -217,7 +169,7 @@ def build_details_section(details):
 
 
 def build_report(results, total, intent_acc, sql_acc, overall):
-    """Glue all the report sections together into one big text string."""
+    
     confusion = results["confusion"]
     all_intents = collect_all_intents(confusion)
 
@@ -231,17 +183,13 @@ def build_report(results, total, intent_acc, sql_acc, overall):
 
 
 def save_report(report):
-    """Write the report text to accuracy_report.txt."""
+   
     with open(REPORT_FILE, "w") as f:
         f.write(report)
 
 
-# =====================================================================
-# PART 5 : THE MAIN ENTRY POINT
-# =====================================================================
-
 def evaluate():
-    """Run the full evaluation, print + save the report, return a summary."""
+    
     dataset = load_dataset()
     total = len(dataset)
 
