@@ -236,7 +236,7 @@ COLUMN_RULES = {
     "score":            {"min": 0,   "max": 100},
     "csat":             {"min": 1,   "max": 5},
     "credit_score":     {"min": 300, "max": 900},
-
+    "goal":              {"min" : 0, "max":50},
     # Time / duration 
     "duration_minutes": {"min": 0,   "max": 1440},
     "duration_seconds": {"min": 0},
