@@ -1,0 +1,3814 @@
+[
+  {
+    "query": "Moving average of monthly sales",
+    "intent": "Trend"
+  },
+  {
+    "query": "Compare profit across categories",
+    "intent": "Comparison"
+  },
+  {
+    "query": "is our profit going up",
+    "intent": "Trend"
+  },
+  {
+    "query": "How much did we sell in total",
+    "intent": "KPI"
+  },
+  {
+    "query": "What is the pattern of orders over time",
+    "intent": "Trend"
+  },
+  {
+    "query": "Bottom 5 products by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Quantity by product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Average discount given",
+    "intent": "KPI"
+  },
+  {
+    "query": "per customer revenue totals",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue by region",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Track quantity sold across months",
+    "intent": "Trend"
+  },
+  {
+    "query": "difference in profit between stores",
+    "intent": "Comparison"
+  },
+  {
+    "query": "What is our total profit",
+    "intent": "KPI"
+  },
+  {
+    "query": "Plot the weekly sales movement",
+    "intent": "Trend"
+  },
+  {
+    "query": "Profit per product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue trend by order_id",
+    "intent": "Trend"
+  },
+  {
+    "query": "Show me a chart of sales",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Compare top and bottom product lines",
+    "intent": "Comparison"
+  },
+  {
+    "query": "is category A or category B doing better",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Can you graph the revenue data",
+    "intent": "Visualization"
+  },
+  {
+    "query": "profit grouped by department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Group sales by category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Rank products by profit margin",
+    "intent": "Ranking"
+  },
+  {
+    "query": "are we growing over time",
+    "intent": "Trend"
+  },
+  {
+    "query": "our star products",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Compare total sales between categories",
+    "intent": "Comparison"
+  },
+  {
+    "query": "overall headcount of transactions",
+    "intent": "KPI"
+  },
+  {
+    "query": "Top 3 customers by profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Compare profit between regions",
+    "intent": "Comparison"
+  },
+  {
+    "query": "show the category split visually",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Compare performance of north vs south region",
+    "intent": "Comparison"
+  },
+  {
+    "query": "each stores total orders",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Sum of all profit",
+    "intent": "KPI"
+  },
+  {
+    "query": "How much revenue have we earned",
+    "intent": "KPI"
+  },
+  {
+    "query": "Net income for the company",
+    "intent": "KPI"
+  },
+  {
+    "query": "heatmap of orders by day",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Bottom 3 customers by profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Show top 5 customers by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "give me a pie of revenue share",
+    "intent": "Visualization"
+  },
+  {
+    "query": "how big is our customer base",
+    "intent": "KPI"
+  },
+  {
+    "query": "Generate a diagram of the sales funnel",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Rank all regions by total profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "total units moved",
+    "intent": "KPI"
+  },
+  {
+    "query": "Bottom 5 regions by sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "our poorest performing store",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Make a visualization of monthly data",
+    "intent": "Visualization"
+  },
+  {
+    "query": "how did we do over the past year",
+    "intent": "Trend"
+  },
+  {
+    "query": "Show the monthly sales trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "New customers versus returning customers",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Top 20 items by quantity sold",
+    "intent": "Ranking"
+  },
+  {
+    "query": "East vs west region performance",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Average order value",
+    "intent": "KPI"
+  },
+  {
+    "query": "sales tallied per salesperson",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Overall sales figure",
+    "intent": "KPI"
+  },
+  {
+    "query": "Profit margin by product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue segmented by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Total revenue generated",
+    "intent": "KPI"
+  },
+  {
+    "query": "Revenue by city",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Sales breakdown per quarter",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Plot total profit by category",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Create a bar chart of top products",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Show me a chart of revenue",
+    "intent": "Visualization"
+  },
+  {
+    "query": "How do the branches compare in profit",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Revenue by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Top 10 products by sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Summarize revenue by payment method",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "revenue movement across quarters",
+    "intent": "Trend"
+  },
+  {
+    "query": "Revenue breakdown by category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Plot profit by category",
+    "intent": "Visualization"
+  },
+  {
+    "query": "revenue please",
+    "intent": "KPI"
+  },
+  {
+    "query": "Compare this year revenue with last year",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Show me the highest profit regions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "How are expenses changing over time",
+    "intent": "Trend"
+  },
+  {
+    "query": "Compare current month sales to previous month",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Give me the total number of products",
+    "intent": "KPI"
+  },
+  {
+    "query": "Rank all products by total revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Calculate the total cost",
+    "intent": "KPI"
+  },
+  {
+    "query": "Sales per customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue trend by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "What is each team contribution to sales",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Plot sales by city",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Plot total revenue by region",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Visualize the distribution of profit",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Total profit",
+    "intent": "KPI"
+  },
+  {
+    "query": "Show top 10 customers by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Visualize revenue by customer",
+    "intent": "Visualization"
+  },
+  {
+    "query": "put revenue on a chart",
+    "intent": "Visualization"
+  },
+  {
+    "query": "how do weekdays compare to weekends",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Correlation between sales and profit",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Show orders grouped by status",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "product A against product B",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Quantity sold per warehouse",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Which customer placed the most orders",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Profit distribution across regions",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "North vs south region",
+    "intent": "Comparison"
+  },
+  {
+    "query": "have sales picked up recently",
+    "intent": "Trend"
+  },
+  {
+    "query": "Segment profit by product line",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "I want a visual of sales distribution",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Contrast sales of category A and B",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Revenue segmented by customer type",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Tell me the total sales amount",
+    "intent": "KPI"
+  },
+  {
+    "query": "Just show me everything",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Compare sales between regions",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Total sales",
+    "intent": "KPI"
+  },
+  {
+    "query": "Total quantity sold",
+    "intent": "KPI"
+  },
+  {
+    "query": "Revenue by product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Visualize quantity by product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Top 5 regions by total revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Seasonal sales pattern analysis",
+    "intent": "Trend"
+  },
+  {
+    "query": "Regions with sales more than 20000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Sales by category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Sum of all payments",
+    "intent": "KPI"
+  },
+  {
+    "query": "the five biggest accounts",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Top 5 products by quantity",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Daily order trend for this quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "Revenue allocation across channels",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue vs profit",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Worst performing products",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what sells the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "how much money did we bring in",
+    "intent": "KPI"
+  },
+  {
+    "query": "Sales numbers month over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "Products with profit more than 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Running total of revenue over months",
+    "intent": "Trend"
+  },
+  {
+    "query": "which region brings in the most money",
+    "intent": "Ranking"
+  },
+  {
+    "query": "week on week sales change",
+    "intent": "Trend"
+  },
+  {
+    "query": "How much revenue did we generate in total",
+    "intent": "KPI"
+  },
+  {
+    "query": "which items barely sell",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Revenue growth rate over quarters",
+    "intent": "Trend"
+  },
+  {
+    "query": "Compare sales between customers",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Total revenue by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Yearly revenue progression",
+    "intent": "Trend"
+  },
+  {
+    "query": "Month on month sales",
+    "intent": "Trend"
+  },
+  {
+    "query": "Month over month revenue growth",
+    "intent": "Trend"
+  },
+  {
+    "query": "MoM sales growth",
+    "intent": "Trend"
+  },
+  {
+    "query": "Month on month profit change",
+    "intent": "Trend"
+  },
+  {
+    "query": "Show sales month by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "How have sales changed month on month",
+    "intent": "Trend"
+  },
+  {
+    "query": "Monthly revenue trend for this year",
+    "intent": "Trend"
+  },
+  {
+    "query": "Sales trend over the last 6 months",
+    "intent": "Trend"
+  },
+  {
+    "query": "Quarter over quarter revenue",
+    "intent": "Trend"
+  },
+  {
+    "query": "Year over year sales trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "Day over day order volume",
+    "intent": "Trend"
+  },
+  {
+    "query": "Cumulative sales by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "Monthly growth percentage in revenue",
+    "intent": "Trend"
+  },
+  {
+    "query": "Trend of average order value over months",
+    "intent": "Trend"
+  },
+  {
+    "query": "How is revenue trending this quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "are monthly sales improving",
+    "intent": "Trend"
+  },
+  {
+    "query": "Compare this month sales with last month",
+    "intent": "Comparison"
+  },
+  {
+    "query": "This quarter vs last quarter profit",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Compare sales of this week and last week",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Online vs offline sales comparison",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Compare revenue by payment method",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does this month compare with the same month last year",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Total sales this month",
+    "intent": "KPI"
+  },
+  {
+    "query": "Revenue for last month",
+    "intent": "KPI"
+  },
+  {
+    "query": "How many orders did we get this month",
+    "intent": "KPI"
+  },
+  {
+    "query": "Average monthly sales",
+    "intent": "KPI"
+  },
+  {
+    "query": "Total customers this year",
+    "intent": "KPI"
+  },
+  {
+    "query": "Total discount given this month",
+    "intent": "KPI"
+  },
+  {
+    "query": "What is our average profit margin",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much did we make last quarter",
+    "intent": "KPI"
+  },
+  {
+    "query": "Sales by month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Profit by month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Quantity sold by month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Total orders by month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue by month and region",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Monthly sales per store",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Sales by day of week",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Revenue by sales channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Average order value by month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "monthly totals for each branch",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "Top 5 months by sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Best performing month this year",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Worst month for revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Top selling products this month",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Top 10 customers this month by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Which store had the highest sales last month",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which month brought in the least revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "Plot month on month sales",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Line chart of monthly revenue",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Bar chart of sales by month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Visualize monthly growth",
+    "intent": "Visualization"
+  },
+  {
+    "query": "Show a graph of sales over months",
+    "intent": "Visualization"
+  },
+  {
+    "query": "highest profit category",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branchs with turnover more than 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest amount country",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region has the lowest spend",
+    "intent": "Ranking"
+  },
+  {
+    "query": "list schools with profit above 10000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank route by amount",
+    "intent": "Ranking"
+  },
+  {
+    "query": "hospitals where pulse is greater than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing month by bonus",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employees with salary below 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer had the least distance",
+    "intent": "Ranking"
+  },
+  {
+    "query": "schools with bmi less than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "best performing channel by amount",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which doctor had the most duration",
+    "intent": "Ranking"
+  },
+  {
+    "query": "top 5 department by income",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing patient by spend",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse had the least pulse",
+    "intent": "Ranking"
+  },
+  {
+    "query": "course with the highest credits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank vehicle by income",
+    "intent": "Ranking"
+  },
+  {
+    "query": "show countrys where weight exceeds 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employees where quantity exceeds 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which state performed worst",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "hospital with the lowest marks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "routes where stock exceeds 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what branch has the highest quantity",
+    "intent": "Ranking"
+  },
+  {
+    "query": "best performing hospital by demand",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branchs with turnover less than 10000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which state had the most cost",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what route has the highest bonus",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 20 customer by distance",
+    "intent": "Ranking"
+  },
+  {
+    "query": "list employees with quantity above 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest margin country",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing route by gpa",
+    "intent": "Ranking"
+  },
+  {
+    "query": "stores where total stock exceeds 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "list states with tenure above 10000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "highest count patient",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what course has the highest bonus",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 3 student by utilization",
+    "intent": "Ranking"
+  },
+  {
+    "query": "months with score less than 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "hospitals with spend more than 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer performed worst",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what vehicle has the highest volume",
+    "intent": "Ranking"
+  },
+  {
+    "query": "teams with demand over 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank patient by speed",
+    "intent": "Ranking"
+  },
+  {
+    "query": "teams where units is greater than 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "customers with gpa more than 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "top 3 branch by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "customers with sales more than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team had the most weight",
+    "intent": "Ranking"
+  },
+  {
+    "query": "doctor with the lowest turnover",
+    "intent": "Ranking"
+  },
+  {
+    "query": "months with volume more than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "category with the lowest expense",
+    "intent": "Ranking"
+  },
+  {
+    "query": "suppliers with inventory less than 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest expense route",
+    "intent": "Ranking"
+  },
+  {
+    "query": "best performing student by expense",
+    "intent": "Ranking"
+  },
+  {
+    "query": "doctor with the lowest units",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employee with the highest stock",
+    "intent": "Ranking"
+  },
+  {
+    "query": "months where quantity is greater than 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "highest revenue doctor",
+    "intent": "Ranking"
+  },
+  {
+    "query": "supplier with the highest utilization",
+    "intent": "Ranking"
+  },
+  {
+    "query": "products where bonus exceeds 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employees where stock exceeds 5000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank country by quantity",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what department has the highest duration",
+    "intent": "Ranking"
+  },
+  {
+    "query": "top 10 country by amount",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product has the lowest price",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team has the lowest spend",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school had the most income",
+    "intent": "Ranking"
+  },
+  {
+    "query": "categorys where rating exceeds 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 10 customer by inventory",
+    "intent": "Ranking"
+  },
+  {
+    "query": "departments with marks over 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "citys where score exceeds 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing customer by revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which doctor had the most overtime",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what course has the highest income",
+    "intent": "Ranking"
+  },
+  {
+    "query": "stores with units above 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 10 month by value",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest turnover category",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which country had the least quantity",
+    "intent": "Ranking"
+  },
+  {
+    "query": "schools with overtime above 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "vehicle with the lowest bmi",
+    "intent": "Ranking"
+  },
+  {
+    "query": "products with spend over 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee performed worst",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing city by bmi",
+    "intent": "Ranking"
+  },
+  {
+    "query": "show zones where demand exceeds 10000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer had the least salary",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which course performed worst",
+    "intent": "Ranking"
+  },
+  {
+    "query": "citys where total sales exceeds 5000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest credits category",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 5 country by salary",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which month performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "country with the highest gpa",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which vehicle performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which zone performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branchs having attendance more than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "patients with dosage less than 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest speed department",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which state had the most pulse",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest gpa doctor",
+    "intent": "Ranking"
+  },
+  {
+    "query": "stores with price over 5000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school had the least demand",
+    "intent": "Ranking"
+  },
+  {
+    "query": "schools where total count exceeds 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "top 20 department by bmi",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team has the highest amount",
+    "intent": "Ranking"
+  },
+  {
+    "query": "suppliers with income less than 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 10 student by margin",
+    "intent": "Ranking"
+  },
+  {
+    "query": "list patients with inventory above 5000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank patient by quantity",
+    "intent": "Ranking"
+  },
+  {
+    "query": "vehicles where total distance exceeds 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 3 hospital by score",
+    "intent": "Ranking"
+  },
+  {
+    "query": "patients with overtime above 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "channels where units is greater than 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "list segments with bonus above 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "teams with gpa above 1000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "lowest dosage patient",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what region has the highest sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "bottom 20 state by income",
+    "intent": "Ranking"
+  },
+  {
+    "query": "highest attendance hospital",
+    "intent": "Ranking"
+  },
+  {
+    "query": "warehouses having weight more than 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing state by expense",
+    "intent": "Ranking"
+  },
+  {
+    "query": "stores with value more than 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "show branchs where margin exceeds 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which channel performed best",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing channel by count",
+    "intent": "Ranking"
+  },
+  {
+    "query": "country with the highest volume",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing branch by pulse",
+    "intent": "Ranking"
+  },
+  {
+    "query": "highest pulse branch",
+    "intent": "Ranking"
+  },
+  {
+    "query": "rank patient by weight",
+    "intent": "Ranking"
+  },
+  {
+    "query": "doctors with spend below 2000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "warehouses with salary more than 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier had the most inventory",
+    "intent": "Ranking"
+  },
+  {
+    "query": "products where total overtime exceeds 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "states where price exceeds 500",
+    "intent": "Ranking"
+  },
+  {
+    "query": "worst performing hospital by distance",
+    "intent": "Ranking"
+  },
+  {
+    "query": "patients with distance less than 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "show countrys where amount exceeds 100",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branchs having pulse more than 8000",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse has the highest gpa",
+    "intent": "Ranking"
+  },
+  {
+    "query": "best performing store by stock",
+    "intent": "Ranking"
+  },
+  {
+    "query": "price across hospital",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me profit by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me demand by city",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "tenure grouped by product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of distance for each student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "stock per student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "distance breakdown by employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bmi across customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "profit grouped by country",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "cost distribution by course",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "income per state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me sales by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total weight by department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total salary by branch",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average volume per vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "rating by department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bmi grouped by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bonus breakdown by school",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show margin for each state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average score per category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show profit for each patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show distance for each warehouse",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "attendance segmented by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show weight for each category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "score segmented by vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show margin for each month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show sales for each course",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "demand distribution by vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "income breakdown by team",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me gpa by region",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "utilization across category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "attendance across route",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "salary grouped by supplier",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average value per route",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of amount for each state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "stock grouped by supplier",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "price segmented by employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "weight breakdown by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of units for each branch",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "rating grouped by school",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me distance by student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total utilization by student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average utilization per department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bmi breakdown by student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of pulse for each doctor",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total value by department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "weight by country",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "utilization across doctor",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "volume per route",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "utilization segmented by channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total spend by patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "speed per zone",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "score per vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show attendance for each segment",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "value distribution by course",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "quantity across student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "stock breakdown by employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of bmi for each branch",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "attendance by student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "amount by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "tenure segmented by department",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "volume per employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "price segmented by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "duration distribution by category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "duration per branch",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "tenure breakdown by patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total amount by city",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of sales for each product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "duration distribution by zone",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average utilization per category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total rating by patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "volume grouped by channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "tenure breakdown by product",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of volume for each category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "speed by segment",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "rating by route",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me cost by city",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average rating per patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "weight by category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "inventory distribution by school",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show dosage for each state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "distance distribution by channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "score grouped by hospital",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "score across hospital",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show cost for each school",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "expense segmented by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "overtime per employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me spend by store",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "tenure per doctor",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bonus by region",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "units across zone",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "show volume for each patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total dosage by patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "duration segmented by zone",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "income grouped by vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bmi per month",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me price by vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "demand per category",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "dosage distribution by route",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average pulse per city",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "cost by store",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of rating for each patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "margin grouped by channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "score segmented by zone",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "pulse across team",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "utilization distribution by channel",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sales by supplier",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "marks segmented by school",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "sum of profit for each customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "rating per hospital",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total pulse by hospital",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "total tenure by segment",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "units distribution by employee",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "average price per supplier",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me utilization by customer",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "credits grouped by supplier",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "marks breakdown by vehicle",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "bonus by student",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "utilization across patient",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "give me speed by state",
+    "intent": "Aggregation"
+  },
+  {
+    "query": "overall sales",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total marks",
+    "intent": "KPI"
+  },
+  {
+    "query": "count of states",
+    "intent": "KPI"
+  },
+  {
+    "query": "how many regions",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total amount",
+    "intent": "KPI"
+  },
+  {
+    "query": "how many departments",
+    "intent": "KPI"
+  },
+  {
+    "query": "overall attendance",
+    "intent": "KPI"
+  },
+  {
+    "query": "average utilization overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much cost",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of quantity",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of channels",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of categorys",
+    "intent": "KPI"
+  },
+  {
+    "query": "total weight",
+    "intent": "KPI"
+  },
+  {
+    "query": "average score",
+    "intent": "KPI"
+  },
+  {
+    "query": "total quantity",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total dosage",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much margin",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of segments",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of teams",
+    "intent": "KPI"
+  },
+  {
+    "query": "pulse total",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the average stock",
+    "intent": "KPI"
+  },
+  {
+    "query": "average distance",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of countrys",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of customers",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of inventory",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of employees",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of patients",
+    "intent": "KPI"
+  },
+  {
+    "query": "score total",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total utilization",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much amount",
+    "intent": "KPI"
+  },
+  {
+    "query": "count of doctors",
+    "intent": "KPI"
+  },
+  {
+    "query": "average amount overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much marks",
+    "intent": "KPI"
+  },
+  {
+    "query": "weight total",
+    "intent": "KPI"
+  },
+  {
+    "query": "how many states",
+    "intent": "KPI"
+  },
+  {
+    "query": "how many students",
+    "intent": "KPI"
+  },
+  {
+    "query": "volume total",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of warehouses",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total salary",
+    "intent": "KPI"
+  },
+  {
+    "query": "total turnover",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total gpa",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of categorys",
+    "intent": "KPI"
+  },
+  {
+    "query": "overall stock",
+    "intent": "KPI"
+  },
+  {
+    "query": "salary total",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of customers",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much bmi",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total speed",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total gpa",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of warehouses",
+    "intent": "KPI"
+  },
+  {
+    "query": "total income",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total duration",
+    "intent": "KPI"
+  },
+  {
+    "query": "spend total",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total expense",
+    "intent": "KPI"
+  },
+  {
+    "query": "total marks",
+    "intent": "KPI"
+  },
+  {
+    "query": "total duration",
+    "intent": "KPI"
+  },
+  {
+    "query": "count of citys",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the average value",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total tenure",
+    "intent": "KPI"
+  },
+  {
+    "query": "average spend",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of schools",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total weight",
+    "intent": "KPI"
+  },
+  {
+    "query": "total number of citys",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of stock",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total revenue",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much duration",
+    "intent": "KPI"
+  },
+  {
+    "query": "overall bonus",
+    "intent": "KPI"
+  },
+  {
+    "query": "how much credits",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of demand",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the average distance",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total weight",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total credits",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of duration",
+    "intent": "KPI"
+  },
+  {
+    "query": "number of employees",
+    "intent": "KPI"
+  },
+  {
+    "query": "total rating",
+    "intent": "KPI"
+  },
+  {
+    "query": "average cost overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "utilization total",
+    "intent": "KPI"
+  },
+  {
+    "query": "average dosage overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "average credits overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "give me the total attendance",
+    "intent": "KPI"
+  },
+  {
+    "query": "sum of turnover",
+    "intent": "KPI"
+  },
+  {
+    "query": "what is the total sales",
+    "intent": "KPI"
+  },
+  {
+    "query": "average units overall",
+    "intent": "KPI"
+  },
+  {
+    "query": "the total attendance",
+    "intent": "KPI"
+  },
+  {
+    "query": "count of stores",
+    "intent": "KPI"
+  },
+  {
+    "query": "cumulative turnover over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "is value going up over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "moving average of bonus",
+    "intent": "Trend"
+  },
+  {
+    "query": "weekly duration",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is margin changing over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly salary",
+    "intent": "Trend"
+  },
+  {
+    "query": "quantity per quarter over the year",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly speed",
+    "intent": "Trend"
+  },
+  {
+    "query": "moving average of amount",
+    "intent": "Trend"
+  },
+  {
+    "query": "yearly attendance trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "moving average of price",
+    "intent": "Trend"
+  },
+  {
+    "query": "is expense going up over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "running total of volume by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is dosage changing over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly stock",
+    "intent": "Trend"
+  },
+  {
+    "query": "inventory month over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "sales growth over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "utilization month over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "weight trend over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "distance growth over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "is amount going up over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "inventory growth over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "utilization trend over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "pulse growth rate by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "is overtime going up over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "yearly weight trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "attendance trend over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "is cost going up over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "moving average of attendance",
+    "intent": "Trend"
+  },
+  {
+    "query": "yearly spend trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative profit over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is weight changing over week",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative income over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative price over week",
+    "intent": "Trend"
+  },
+  {
+    "query": "running total of gpa by week",
+    "intent": "Trend"
+  },
+  {
+    "query": "pulse trend by week",
+    "intent": "Trend"
+  },
+  {
+    "query": "amount growth over quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative margin by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "turnover trend by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "is weight going up over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is profit changing over week",
+    "intent": "Trend"
+  },
+  {
+    "query": "moving average of cost",
+    "intent": "Trend"
+  },
+  {
+    "query": "value growth rate by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly volume",
+    "intent": "Trend"
+  },
+  {
+    "query": "is count going up over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "units trend over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "running total of sales by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "score evolution over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "cost trend by year",
+    "intent": "Trend"
+  },
+  {
+    "query": "demand per date over the year",
+    "intent": "Trend"
+  },
+  {
+    "query": "utilization trend over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "yearly income trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is salary changing over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "pulse growth over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is distance changing over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "duration evolution over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "demand evolution over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "quantity trend over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative demand over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "running total of inventory by quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "yearly speed trend",
+    "intent": "Trend"
+  },
+  {
+    "query": "marks trend over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is bmi changing over quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "volume growth over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly spend",
+    "intent": "Trend"
+  },
+  {
+    "query": "expense growth rate by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "is turnover going up over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "price over time",
+    "intent": "Trend"
+  },
+  {
+    "query": "is demand going up over date",
+    "intent": "Trend"
+  },
+  {
+    "query": "duration over time",
+    "intent": "Trend"
+  },
+  {
+    "query": "credits month over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "overtime evolution over week",
+    "intent": "Trend"
+  },
+  {
+    "query": "weekly dosage",
+    "intent": "Trend"
+  },
+  {
+    "query": "is quantity going up over quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "pulse trend over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "running total of demand by day",
+    "intent": "Trend"
+  },
+  {
+    "query": "pulse trend by month",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative pulse by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "gpa month over month",
+    "intent": "Trend"
+  },
+  {
+    "query": "tenure trend by week",
+    "intent": "Trend"
+  },
+  {
+    "query": "income per week over the year",
+    "intent": "Trend"
+  },
+  {
+    "query": "spend trend by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "overtime evolution over year",
+    "intent": "Trend"
+  },
+  {
+    "query": "stock growth rate by quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative attendance by quarter",
+    "intent": "Trend"
+  },
+  {
+    "query": "how is rating changing over day",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly cost",
+    "intent": "Trend"
+  },
+  {
+    "query": "cumulative cost by date",
+    "intent": "Trend"
+  },
+  {
+    "query": "monthly pulse",
+    "intent": "Trend"
+  },
+  {
+    "query": "how does branch 1 compare to Delhi in value",
+    "intent": "Comparison"
+  },
+  {
+    "query": "profit comparison between 2024 and east",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Delhi versus north gpa",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare north and branch 2 by turnover",
+    "intent": "Comparison"
+  },
+  {
+    "query": "expense south vs branch 1",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher branch 1 or team A in value",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does branch 2 compare to team B in turnover",
+    "intent": "Comparison"
+  },
+  {
+    "query": "tenure comparison between Delhi and branch 2",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare sales across supplier",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does Q2 compare to team A in weight",
+    "intent": "Comparison"
+  },
+  {
+    "query": "team B versus team A units",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher north or south in volume",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does Q2 compare to Q1 in units",
+    "intent": "Comparison"
+  },
+  {
+    "query": "team B versus west count",
+    "intent": "Comparison"
+  },
+  {
+    "query": "attendance comparison between Delhi and branch 1",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare cost across route",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare branch 1 and east by quantity",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher branch 1 or Mumbai in duration",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare count across city",
+    "intent": "Comparison"
+  },
+  {
+    "query": "units comparison between Mumbai and north",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare speed between west and Pune",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does north compare to west in spend",
+    "intent": "Comparison"
+  },
+  {
+    "query": "difference in expense between Pune and east",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does team B compare to Delhi in turnover",
+    "intent": "Comparison"
+  },
+  {
+    "query": "branch 2 versus branch 1 volume",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare volume across channel",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare profit between branch 2 and Mumbai",
+    "intent": "Comparison"
+  },
+  {
+    "query": "difference in quantity between branch 1 and Delhi",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher west or Mumbai in duration",
+    "intent": "Comparison"
+  },
+  {
+    "query": "Mumbai versus Pune weight",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare Mumbai and branch 2 by utilization",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher Pune or Q2 in count",
+    "intent": "Comparison"
+  },
+  {
+    "query": "difference in duration between team A and Delhi",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare weight between Q1 and east",
+    "intent": "Comparison"
+  },
+  {
+    "query": "spend comparison between Delhi and Q2",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does Mumbai compare to 2024 in amount",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher 2024 or Pune in distance",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare attendance between Q2 and west",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare income between east and team B",
+    "intent": "Comparison"
+  },
+  {
+    "query": "difference in expense between team A and Q2",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does Delhi compare to Pune in credits",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does branch 1 compare to Q2 in tenure",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare team A and 2023 by tenure",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare stock across product",
+    "intent": "Comparison"
+  },
+  {
+    "query": "north versus Pune attendance",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does branch 2 compare to south in count",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher 2023 or south in sales",
+    "intent": "Comparison"
+  },
+  {
+    "query": "difference in cost between south and east",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does south compare to Mumbai in attendance",
+    "intent": "Comparison"
+  },
+  {
+    "query": "distance comparison between team A and 2023",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare utilization across course",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher south or team B in spend",
+    "intent": "Comparison"
+  },
+  {
+    "query": "tenure comparison between Mumbai and west",
+    "intent": "Comparison"
+  },
+  {
+    "query": "east versus Mumbai spend",
+    "intent": "Comparison"
+  },
+  {
+    "query": "south versus 2023 demand",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare east and 2023 by sales",
+    "intent": "Comparison"
+  },
+  {
+    "query": "how does Q1 compare to west in pulse",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare speed between Mumbai and Q2",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher team B or team A in bonus",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare units across product",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare attendance across course",
+    "intent": "Comparison"
+  },
+  {
+    "query": "salary comparison between Q1 and Pune",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare east and branch 2 by units",
+    "intent": "Comparison"
+  },
+  {
+    "query": "value Q1 vs Delhi",
+    "intent": "Comparison"
+  },
+  {
+    "query": "pulse comparison between east and Q2",
+    "intent": "Comparison"
+  },
+  {
+    "query": "tenure Pune vs team A",
+    "intent": "Comparison"
+  },
+  {
+    "query": "which is higher west or 2024 in margin",
+    "intent": "Comparison"
+  },
+  {
+    "query": "team A versus 2023 overtime",
+    "intent": "Comparison"
+  },
+  {
+    "query": "team A versus 2023 attendance",
+    "intent": "Comparison"
+  },
+  {
+    "query": "compare units across store",
+    "intent": "Comparison"
+  },
+  {
+    "query": "visualize units across customer",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of credits by zone",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of amount by patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph tenure by month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of dosage by category",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot turnover over year",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot attendance by doctor",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of stock by month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph spend by customer",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot volume for each team",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot inventory over month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph marks by route",
+    "intent": "Visualization"
+  },
+  {
+    "query": "bar chart of stock by vehicle",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of turnover by state",
+    "intent": "Visualization"
+  },
+  {
+    "query": "display a chart of price by store",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot count for each product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of salary by patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph marks by zone",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of value by patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "draw a chart of attendance by route",
+    "intent": "Visualization"
+  },
+  {
+    "query": "draw a chart of turnover by route",
+    "intent": "Visualization"
+  },
+  {
+    "query": "treemap of amount by customer",
+    "intent": "Visualization"
+  },
+  {
+    "query": "display a chart of bonus by hospital",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph bonus by vehicle",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize gpa across hospital",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot spend by product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot rating over date",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize rating by supplier",
+    "intent": "Visualization"
+  },
+  {
+    "query": "display a chart of profit by segment",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of duration by route",
+    "intent": "Visualization"
+  },
+  {
+    "query": "bar chart of weight by month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot score for each channel",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize cost across store",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot volume for each channel",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of salary by student",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of credits by warehouse",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot attendance over day",
+    "intent": "Visualization"
+  },
+  {
+    "query": "chart marks by branch",
+    "intent": "Visualization"
+  },
+  {
+    "query": "chart pulse by channel",
+    "intent": "Visualization"
+  },
+  {
+    "query": "graph expense by product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot inventory for each branch",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of rating by country",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize bonus by segment",
+    "intent": "Visualization"
+  },
+  {
+    "query": "bar chart of utilization by patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot spend by warehouse",
+    "intent": "Visualization"
+  },
+  {
+    "query": "bar chart of weight by department",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of cost by product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "bar chart of volume by patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot expense by supplier",
+    "intent": "Visualization"
+  },
+  {
+    "query": "draw a chart of attendance by state",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of sales by warehouse",
+    "intent": "Visualization"
+  },
+  {
+    "query": "treemap of quantity by department",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of duration by customer",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of units by state",
+    "intent": "Visualization"
+  },
+  {
+    "query": "draw a chart of margin by city",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot attendance for each month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of attendance by state",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize count by warehouse",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot sales by product",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize gpa across month",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of stock by city",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of turnover by student",
+    "intent": "Visualization"
+  },
+  {
+    "query": "show a graph of bonus by warehouse",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize score across hospital",
+    "intent": "Visualization"
+  },
+  {
+    "query": "pie chart of count by doctor",
+    "intent": "Visualization"
+  },
+  {
+    "query": "visualize rating across patient",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot attendance by student",
+    "intent": "Visualization"
+  },
+  {
+    "query": "chart inventory by hospital",
+    "intent": "Visualization"
+  },
+  {
+    "query": "plot profit over year",
+    "intent": "Visualization"
+  },
+  {
+    "query": "draw a chart of price by hospital",
+    "intent": "Visualization"
+  },
+  {
+    "query": "which team had the least complaints",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which channel has the most downloads",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the channel with the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "outlet with the fewest revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "clinic with the fewest downloads",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse had the most goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "region with the fewest admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product had the least admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school had the least tickets",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what warehouse had the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "clinic with the fewest goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which player had the most profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer had the least profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee has the most claims",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school has the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which clinic had the most bookings",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the region with the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "agent with the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the school with the most appointments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer has the most points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what patient had the most profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student has the most goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route has the most appointments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employee with the most tickets",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the supplier with the most profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier has the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student has the most points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what zone had the most points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "region with the fewest transactions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which channel had the most defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product has the most revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region had the most points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the patient with the most admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branch with the most shipments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse had the most sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "player with the fewest visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "store with the fewest appointments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branch with the fewest returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "patient with the most clicks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team had the least goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store has the fewest profit",
+    "intent": "Ranking"
+  },
+  {
+    "query": "employee with the most orders",
+    "intent": "Ranking"
+  },
+  {
+    "query": "store with the fewest visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse had the most orders",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which channel had the most calls",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region had the most revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route has the most returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what clinic had the most downloads",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the department with the most points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse has the fewest points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital has the fewest admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "region with the fewest defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "store with the fewest clicks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region had the least revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "warehouse with the most admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient had the least claims",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route had the least defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which department has the fewest visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what team had the most sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which doctor has the most claims",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which doctor had the least signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient had the most orders",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store had the least tickets",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the employee with the most defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the employee with the most tickets",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the employee with the most transactions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "route with the fewest returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier has the most calls",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store had the least returns",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which outlet has the most revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which agent has the fewest sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store had the most visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the branch with the most goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what channel had the most enrollments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the player with the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the channel with the most claims",
+    "intent": "Ranking"
+  },
+  {
+    "query": "product with the most admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "student with the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the region with the most clicks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient has the fewest complaints",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which department had the least shipments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "student with the fewest complaints",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what department had the most defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school had the most bookings",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer had the least complaints",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product had the least visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer has the fewest bookings",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branch with the fewest tickets",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what school had the most goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "region with the most calls",
+    "intent": "Ranking"
+  },
+  {
+    "query": "product with the fewest admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what employee had the most calls",
+    "intent": "Ranking"
+  },
+  {
+    "query": "region with the fewest points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the team with the most clicks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the agent with the most shipments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route has the most bookings",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the hospital with the most appointments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what doctor had the most sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region has the fewest appointments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "channel with the fewest sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which doctor had the least points",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student has the most revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch had the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "player with the most transactions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "customer with the most revenue",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store has the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier had the most shipments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital has the most bookings",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which department has the fewest admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which outlet has the fewest visits",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team had the most clicks",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what region had the most admissions",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital has the fewest sales",
+    "intent": "Ranking"
+  },
+  {
+    "query": "branch with the fewest claims",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which outlet had the least goals",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the agent with the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "clinic with the fewest enrollments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the zone with the most signups",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student has the fewest defects",
+    "intent": "Ranking"
+  },
+  {
+    "query": "the channel with the most enrollments",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital generated the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which channel scored the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region earned the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which player recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what region scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which agent generated the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which department recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what department logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region processed the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which agent earned the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team made the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store made the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route generated the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what school scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what clinic logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee made the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route scored the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which player scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team scored the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what branch received the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital logged the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what agent processed the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student scored the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route earned the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient logged the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee earned the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student generated the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region recorded the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier recorded the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what department made the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch recorded the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what region logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what route recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which zone processed the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team scored the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer received the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what student booked the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product generated the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which supplier booked the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch made the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what route logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which outlet scored the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team received the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what region recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch sold the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which hospital made the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which branch received the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which clinic recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which customer earned the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which employee generated the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what school made the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which player logged the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which zone logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which zone recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which region sold the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what doctor processed the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which student received the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse sold the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what outlet booked the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient booked the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which product handled the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which agent logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which route recorded the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what warehouse logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which school sold the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store processed the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient handled the least",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which patient handled the highest",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what player received the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "what hospital received the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which store received the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which warehouse booked the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which clinic logged the most",
+    "intent": "Ranking"
+  },
+  {
+    "query": "which team recorded the highest",
+    "intent": "Ranking"
+  }
+]
